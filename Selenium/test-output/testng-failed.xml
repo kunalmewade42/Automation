@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="tests" name="Orange HRM Test - safari(failed)" verbose="3">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="MyTests.OrangeHRMTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="orangeHRMTitleTest"/>
+          <include name="setup"/>
+          <include name="orangeHRMUrlTest"/>
+          <include name="testing"/>
+          <include name="orangeHRMFreeTrailButtonTest"/>
+        </methods>
+      </class> <!-- MyTests.OrangeHRMTest -->
+    </classes>
+  </test> <!-- Orange HRM Test - safari(failed) -->
+  <test thread-count="3" parallel="tests" name="OpenCart Test - safari(failed)" verbose="3">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="MyTests.DemoCartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="demoCartTitleTest"/>
+          <include name="setup"/>
+          <include name="testing"/>
+          <include name="demoCartUrlTest"/>
+        </methods>
+      </class> <!-- MyTests.DemoCartTest -->
+    </classes>
+  </test> <!-- OpenCart Test - safari(failed) -->
+  <test thread-count="3" parallel="tests" name="Orange HRM Test - chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="MyTests.OrangeHRMTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="orangeHRMTitleTest"/>
+          <include name="setup"/>
+          <include name="orangeHRMFreeTrailButtonTest"/>
+        </methods>
+      </class> <!-- MyTests.OrangeHRMTest -->
+    </classes>
+  </test> <!-- Orange HRM Test - chrome(failed) -->
+  <test thread-count="3" parallel="tests" name="Orange HRM Test - firefox(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MyTests.OrangeHRMTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="orangeHRMTitleTest"/>
+          <include name="setup"/>
+          <include name="orangeHRMFreeTrailButtonTest"/>
+        </methods>
+      </class> <!-- MyTests.OrangeHRMTest -->
+    </classes>
+  </test> <!-- Orange HRM Test - firefox(failed) -->
+</suite> <!-- Failed suite [Test automtion regression suite] -->
